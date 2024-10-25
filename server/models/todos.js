@@ -20,8 +20,6 @@ const todoSchema = new Schema({
     }
 });
 
-// Create the Todo model using the schema
 const Todo = model('Todo', todoSchema);
 
-// Export the Todo model
 export default Todo;
