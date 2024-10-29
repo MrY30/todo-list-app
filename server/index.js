@@ -1,5 +1,5 @@
 import express from "express"
-// import connnect from "./database/mongodb-connect.js"
+import connnect from "./database/mongodb-connect.js"
 
 import todosRouter from "./routes/todos.js"
 import usersRouter from "./routes/users.js"
@@ -27,7 +27,7 @@ app.use(express.static(path.resolve(__dirname, "../frontend")));
 app.use("/api", todosRouter)
 app.use("/api", usersRouter)
 
-// connnect();
+connnect();
 
 app.get("*", (req, res) => {
     res.sendFile(path.resolve(__dirname, "../frontend","index.html"));
