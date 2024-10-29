@@ -1,0 +1,25 @@
+<!-- Edit Todo Page -->
+<div id="edit-page" class="page active">
+    <div class="container">
+        <div class="edit-card">
+            <h1>Edit Todo</h1>
+            <form id="edit-form">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="edit-title" required>
+                </div>
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="edit-status">
+                        <option value="pending">Pending</option>
+                        <option value="completed">Completed</option>
+                    </select>
+                </div>
+                <div class="button-group">
+                    <a href="/todo" class="btn-save" onclick="route(event)">Save Changes</a>
+                    <a href="/todo" class="btn-cancel" onclick="route(event)">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

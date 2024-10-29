@@ -1,0 +1,48 @@
+<!-- Todo List Page -->
+<div id="todo-list-page" class="page active">
+    <div class="container">
+        <div class="header">
+            <h1>My Todo List</h1>
+            <a href = "/add" class="add-btn" onclick="route(event)">Add Todo</a>
+        </div>
+        <div class="todo-list" id="todo-items">
+            <!-- Todo items will be dynamically inserted here -->
+            <div class="todo-item">
+                <div class="todo-content">
+                    <span class="">Study SPA Implementation</span> 
+                </div>
+                <div class="actions">
+                    <a href="/edit" onclick= "route(event)" class="btn-icon btn-edit">Edit</a>
+                    <a href="/delete" onclick= "route(event)" class="btn-icon btn-delete">Delete</a>
+                </div>
+            </div>
+            <div class="todo-item">
+                <div class="todo-content">
+                    <span class="">Prepare for Exams</span> 
+                </div>
+                <div class="actions">
+                    <a href="/edit" onclick= "route(event)" class="btn-icon btn-edit">Edit</a>
+                    <a href="/delete" onclick= "route(event)" class="btn-icon btn-delete">Delete</a>
+                </div>
+            </div>
+            <div class="todo-item">
+                <div class="todo-content">
+                    <span class="completed">Finish Assignment 5</span> 
+                </div>
+                <div class="actions">
+                    <a href="/edit" onclick= "route(event)" class="btn-icon btn-edit">Edit</a>
+                    <a href="/delete" onclick= "route(event)" class="btn-icon btn-delete">Delete</a>
+                </div>
+            </div>
+            <div class="todo-item">
+                <div class="todo-content">
+                    <span class="">Sleep</span> 
+                </div>
+                <div class="actions">
+                    <a href="/edit" onclick= "route(event)" class="btn-icon btn-edit">Edit</a>
+                    <a href="/delete" onclick= "route(event)" class="btn-icon btn-delete">Delete</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
